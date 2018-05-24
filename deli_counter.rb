@@ -1,5 +1,5 @@
 katz_deli = []
-name = gets.chomp
+name = g
 
 def line(katz_deli) # This is accepting the empty katz_deli array and puts'ing the string.
   puts "The line is currently empty."
