@@ -1,7 +1,7 @@
 katz_deli = []
 
 def line(line) # This is accepting the empty katz_deli array and puts'ing the string.
-  if line == 0 
+  if line.size == 0 
   puts "The line is currently empty."
   else
     output = "The line is currently: "
