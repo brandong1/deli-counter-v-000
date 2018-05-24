@@ -8,7 +8,7 @@ def line(line) # This is accepting the empty katz_deli array and puts'ing the st
     count = 0 
     line.each do |name| # This line is saying "do this for each index (name) in the line array"
       count += 1 # increase count by one
-      output += "#{count}. #{name}"
+      output += "#{count}. #{name}" # This is basically saying "output = "The line is currently: " + "count and name"
       output += " " if count != line.size
     end
     puts output
