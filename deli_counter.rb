@@ -1,25 +1,48 @@
 katz_deli = []
 
-def line(katz_deli) # This is accepting the empty katz_deli array and puts'ing the string.
-  customers == 0 
+def line(line) # This is accepting the empty katz_deli array and puts'ing the string.
+  if line == 0 
   puts "The line is currently empty."
-  if customers > 0 
-    take_a_number(name)
-    
-    customers += 1 
+  else
+    output = "The line is currently: "
+    count = 0 
+    line.each do |name|
+      count += 1 
+      output += "#{count}. #{person}"
+      output += " " if count != line.size
+    end
+    puts output
+    output
+end
+
+
+
+def line(line)
+  if line.size == 0
+    puts "The line is currently empty."
+  else
+    output = "The line is currently: "
+    count = 0
+    line.each do |person|
+      count += 1
+      output += "#{count}. #{person}"
+      output += " " if count != line.size
+    end
+    puts output
+    output
   end
-
 end
 
-def take_a_number(katz_deli, name)
-  name = gets.strip
-  puts "Welcome, #{name}. You are number #{customers} in line."
+def take_a_number(line, person)
+  puts "Welcome, #{person}. You are number #{line.size + 1} in line."
+  line << person
 end
 
-def now_serving(name)
-  if customers == 0 
+def now_serving(line)
+  if line.size == 0
     puts "There is nobody waiting to be served!"
   else
-  puts "Currently serving #{name}."
-  end 
+    puts "Currently serving #{line.shift}."
+    line
+  end
 end
