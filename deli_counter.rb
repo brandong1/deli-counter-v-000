@@ -3,7 +3,7 @@ katz_deli = []
 def line(katz_deli) # This is accepting the empty katz_deli array and puts'ing the string.
   customers = 0 
   puts "The line is currently empty."
-  if customers.count > 0 
+  if customers > 0 
     now_serving(katz_deli)
     customers += 1 
   end
