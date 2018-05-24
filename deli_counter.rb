@@ -17,26 +17,9 @@ def line(line) # This is accepting the empty katz_deli array and puts'ing the st
 end
 
 
-
-def line(line)
-  if line.size == 0
-    puts "The line is currently empty."
-  else
-    output = "The line is currently: "
-    count = 0
-    line.each do |person|
-      count += 1
-      output += "#{count}. #{person}"
-      output += " " if count != line.size
-    end
-    puts output
-    output
-  end
-end
-
-def take_a_number(line, person)
-  puts "Welcome, #{person}. You are number #{line.size + 1} in line."
-  line << person
+def take_a_number(line, name)
+  puts "Welcome, #{name}. You are number #{line.size + 1} in line."
+  line << name
 end
 
 def now_serving(line)
