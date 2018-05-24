@@ -13,6 +13,7 @@ def line(line) # This is accepting the empty katz_deli array and puts'ing the st
     end
     puts output
     output
+  end
 end
 
 
